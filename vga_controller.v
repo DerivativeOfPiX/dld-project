@@ -1,8 +1,8 @@
-`include "v_counter.sv"
-`include "h_counter.sv"
-`include "clk_div.sv"
-`include "vga_sync.sv"
-`include "pixel_gen.sv"
+`include "v_counter.v"
+`include "h_counter.v"
+`include "clk_div.v"
+`include "vga_sync.v"
+`include "pixel_gen.v"
 
 module vga_controller(clk, clk_d, h_sync, v_sync, red, green, blue);
   input clk;

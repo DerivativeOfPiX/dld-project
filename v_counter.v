@@ -8,13 +8,12 @@ module v_counter(clk, count,enable_v);
     always @ (posedge clk)
         begin 
             if (count < 524)
-                if (enable_v = 1'b1)
+                if(enable_v == 1'b1)
                     begin
                         count <= count + 1;
                     end
                 else
                     count <= count;
-                */
             else
                 begin
                     count <= 0;

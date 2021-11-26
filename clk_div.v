@@ -4,7 +4,7 @@ module clk_div(clk, clk_d);
   output clk_d;
   reg clk_d;
   reg count;
-  intial
+  initial
   begin
     clk_d = 0;
     count = 0;

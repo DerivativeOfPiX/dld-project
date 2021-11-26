@@ -1,4 +1,4 @@
-`timescale 1ns/ps
+`timescale 1ns/1ps
 
 module pixel_gen(
   input clk_d,
@@ -12,17 +12,16 @@ module pixel_gen(
   
   always @(posedge clk_d) 
     begin 
-      if((pixel_x == 0) || (pixel_x == 639)) 
-        || ((pixel_y == 0) || (pixel_y = 479))
+      if(((pixel_x == 0) || (pixel_x == 639)) || ((pixel_y == 0) || (pixel_y == 479)))
         begin 
           red <= 4'hF;
           blue <= 4'hF;
           green <= 4'hF;
         end
       else begin
-        red <= video_on ? ((((pixel_x - 81)/60)%2 == ((pixel_y/60)%2) ? 4'hF:4h'0):(4'h0);
-        green <= video_on ? ((((pixel_x - 81)/60)%2 == ((pixel_y/60)%2) ? 4'hF:4h'0):(4'h0);
-        blue <= video_on ? ((((pixel_x - 81)/60)%2 == ((pixel_y/60)%2) ? 4'hF:4h'0):(4'h0);
+        red <= video_on ? (pixel_y > 240 ? 4'hE : 4'h0): 4'h0;
+        green <= video_on ? (pixel_y > 630 ? 4'hE : 4'h0): 4'h0;
+        blue <= 4'h0;
       end
     end 
 endmodule
