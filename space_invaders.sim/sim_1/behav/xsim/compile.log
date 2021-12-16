@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faroo/Desktop/DLD-Project/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faroo/Desktop/DLD-Project/h_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module h_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faroo/Desktop/DLD-Project/pixel_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faroo/Desktop/DLD-Project/v_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faroo/Desktop/DLD-Project/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faroo/Desktop/DLD-Project/vga_controller.v" into library xil_defaultlib
+ERROR: [VRFC 10-3195] cannot open include file 'v_counter.sv' [C:/Users/faroo/Desktop/DLD-Project/vga_controller.v:1]
+ERROR: [VRFC 10-3195] cannot open include file 'h_counter.sv' [C:/Users/faroo/Desktop/DLD-Project/vga_controller.v:2]
+ERROR: [VRFC 10-3195] cannot open include file 'clk_div.sv' [C:/Users/faroo/Desktop/DLD-Project/vga_controller.v:3]
+ERROR: [VRFC 10-3195] cannot open include file 'vga_sync.sv' [C:/Users/faroo/Desktop/DLD-Project/vga_controller.v:4]
+ERROR: [VRFC 10-3195] cannot open include file 'pixel_gen.sv' [C:/Users/faroo/Desktop/DLD-Project/vga_controller.v:5]
+INFO: [VRFC 10-311] analyzing module vga_controller
+ERROR: [VRFC 10-2865] module 'vga_controller' ignored due to previous errors [C:/Users/faroo/Desktop/DLD-Project/vga_controller.v:7]

@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../DLD-Project/clk_div.v" \
+"../../../../../DLD-Project/h_counter.v" \
+"../../../../../DLD-Project/pixel_gen.v" \
+"../../../../../DLD-Project/v_counter.v" \
+"../../../../../DLD-Project/vga_sync.v" \
+"../../../../../DLD-Project/vga_controller.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
